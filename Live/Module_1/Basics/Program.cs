@@ -21,9 +21,20 @@ internal class Program
         //p2.SetLinewidth(15);
         p2.Draw("Hi there!");
 
-       // p1 = 1;
+        // p1 = 1;
 
+        //German g1 = new Heinz();
+        // Generalize
+        Pen p3 = new FountainPen
+        {
+            Color = ConsoleColor.Red,
+            Linewidth = 15
+        };
 
+        for (int i = 0; i < 7; i++)
+        { 
+            p3.Draw($"Hello World {i}");
+        }
 
 
         // Big Crunch where everything ends.
