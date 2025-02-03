@@ -20,8 +20,9 @@ internal class Program
         };
 
         //Circle[] array = new Circle[] { circle, circle2 };
-        canvas.AssignCircle(circle, circle2);
-     
+        //Shape shape = circle;
+        canvas.Assign(circle);
+
         Rectangle rectangle = new Rectangle
         {
             Color = ConsoleColor.Green,
@@ -30,10 +31,10 @@ internal class Program
             Location = new Position { X = 100, Y = 200 }
         };
         
-        canvas.AssignRectangle(rectangle);
+        canvas.Assign(rectangle);
 
         Circle c3 = CreateCircle();
-        canvas.AssignCircle(c3);
+        canvas.Assign(c3);
     }
 
     static Circle CreateCircle()

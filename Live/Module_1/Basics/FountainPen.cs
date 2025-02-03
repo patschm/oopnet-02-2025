@@ -6,7 +6,7 @@ internal class FountainPen :Pen
 {
     public int NumberOfWrites { get; set; } = 5;
 
-    public void Draw(string text)
+    public override void Draw(string text)
     {
         if(NumberOfWrites == 0)
         {

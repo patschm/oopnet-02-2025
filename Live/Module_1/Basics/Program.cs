@@ -28,8 +28,14 @@ internal class Program
         Pen p3 = new FountainPen
         {
             Color = ConsoleColor.Red,
-            Linewidth = 15
+            Linewidth = 15,
+            NumberOfWrites = 4
         };
+
+        // Don't do this unless good reason (which are rare)
+        if (p3 is FountainPen)
+            (p3 as FountainPen).NumberOfWrites = 3;
+      
 
         for (int i = 0; i < 7; i++)
         { 

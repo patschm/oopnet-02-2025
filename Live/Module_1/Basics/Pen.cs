@@ -40,7 +40,7 @@ class Pen
     //    return _linewidth;
     //}
     // Behavior is defined in Methods
-    public void Draw(string text)
+    public virtual void Draw(string text)
     {
         Console.ForegroundColor = Color;
         Console.WriteLine($"The pen writes {text} in linewidth {Linewidth}");

@@ -2,33 +2,21 @@
 
 internal class Canvas
 {
-	private List<Circle> _circles = new List<Circle>();
-	private List<Rectangle> _rectangles = new List<Rectangle>();
+    private List<Shape> _shapes = new List<Shape>();
 
-	public void Refresh()
-	{ 
-		Console.Clear();
-		foreach(Circle circle in _circles)
-		{
-			circle.Draw();	
-		}
-		foreach(var rect in _rectangles)
-		{
-			rect.Draw();
-		}
-	}
-
-	public void AssignCircle(params Circle[] circles)
-	{
-		foreach (var circle in circles)
-		{
-            _circles.Add(circle);
+    public void Refresh()
+    {
+        Console.Clear();
+        foreach (Shape circle in _shapes)
+        {
+            circle.Draw();
         }
-		Refresh();
-	}
-	public void AssignRectangle(Rectangle rectangle)
-	{
-		_rectangles.Add(rectangle);
-		Refresh();
-	}
+    }
+
+    public void Assign(Shape shape)
+    {
+        _shapes.Add(shape);
+        Refresh();
+    }
+
 }

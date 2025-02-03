@@ -1,7 +1,7 @@
 ﻿
 namespace DrawingProgram;
 
-internal class Rectangle
+internal class Rectangle: Shape
 {
     #region Fields
     private int _width;
@@ -26,11 +26,9 @@ internal class Rectangle
 				_width = value; 
 		}
 	}
-    public ConsoleColor Color { get; set; }
-    public Position Location { get; set; } = new Position();
     #endregion
 
-    public void Draw()
+    public override void Draw()
     {
         Console.ForegroundColor = Color;
         Console.WriteLine($"Rectangle on position ({Location.X}, {Location.Y}) with width {Width} and height {Height}");

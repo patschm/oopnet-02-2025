@@ -1,6 +1,6 @@
 ﻿namespace DrawingProgram;
 
-internal class Circle
+internal class Circle:Shape
 {
 	private int _radius;
 
@@ -13,11 +13,9 @@ internal class Circle
 				_radius = value; 
 		}
 	}
-	public Position Location { get; set; } = new Position();
-    public ConsoleColor Color { get; set; }
+	
 
-
-	public void Draw()
+	public override void Draw()
 	{
 		Console.ForegroundColor = Color;
         Console.WriteLine($"Circle on position ({Location.X}, {Location.Y}) with radius  {Radius}");
