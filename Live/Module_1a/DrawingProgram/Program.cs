@@ -18,6 +18,7 @@ internal class Program
             Location = new Position { X = 100, Y = 200 },
             Color = ConsoleColor.Blue
         };
+     
 
         //Circle[] array = new Circle[] { circle, circle2 };
         //Shape shape = circle;

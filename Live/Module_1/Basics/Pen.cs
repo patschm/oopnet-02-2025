@@ -8,6 +8,8 @@ class Pen
     private int _linewidth = 10;
     //private ConsoleColor _color = ConsoleColor.Black;
 
+    // Protected members are accessible in derived classen. Not outside
+    protected string name;
     // Properties. Use properties to regulate values to your fields
     // Encapsulation
     public int Linewidth
@@ -39,13 +41,20 @@ class Pen
     //{
     //    return _linewidth;
     //}
+
     // Behavior is defined in Methods
+    // virtual means that this method CAN be overidden. It's up to the subclass to override
     public virtual void Draw(string text)
     {
         Console.ForegroundColor = Color;
         Console.WriteLine($"The pen writes {text} in linewidth {Linewidth}");
         Console.ResetColor();
     }
+
+    // Abstract methods have noe implementation.
+    // Which means derived MUST override them.
+    // Making a method abstract means the entire class will be abstract as well.
+    //public abstract void Draw(string text);
 
     // Constructors
     // Provides default values for your fields

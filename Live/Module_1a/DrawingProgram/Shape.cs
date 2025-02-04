@@ -1,7 +1,7 @@
 ﻿
 namespace DrawingProgram;
 
-internal class Shape
+class Shape
 {
     public Position Location { get; set; } = new Position();
     public ConsoleColor Color { get; set; }
