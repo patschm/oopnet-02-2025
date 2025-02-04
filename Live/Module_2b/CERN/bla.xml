@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CERN</name>
+    </assembly>
+    <members>
+        <member name="T:CERN.WillemKlein">
+            <summary>
+            This guy does all the work
+            </summary>
+        </member>
+        <member name="M:CERN.WillemKlein.Calculate(CERN.MathFunc,System.Int32,System.Int32)">
+            <summary>
+            Calculate something
+            </summary>
+            <param name="f1">The instruction for the calculation</param>
+            <param name="x">a number</param>
+            <param name="y">a number</param>
+        </member>
+    </members>
+</doc>
